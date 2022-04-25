@@ -1,0 +1,7 @@
+project: rare
+target: rare
+duration: '90'
+advanced_triage: false
+
+cmds:
+  - cmd: /rare
