@@ -4,4 +4,4 @@ duration: 90
 advanced_triage: false
 
 cmds:
-  - cmd: /rare
+  - cmd: /rare histo
