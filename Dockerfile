@@ -9,10 +9,11 @@ RUN apt-get update && \
 ADD . /rare
 WORKDIR /rare
 
+## TODO: ADD YOUR BUILD INSTRUCTIONS HERE.
 RUN go mod download
 RUN go build .
 
-## TODO: ADD YOUR BUILD INSTRUCTIONS HERE.
+FROM --platform=linux/amd64 golang:latest
 
 ## TODO: Change <Path in Builder Stage>
 COPY --from=builder /rare/rare /rare
