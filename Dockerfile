@@ -13,9 +13,10 @@ WORKDIR /rare
 RUN go mod download
 RUN go build .
 RUN ls /rare
+RUN /rare/rare
 
 FROM --platform=linux/amd64 golang:latest
 
 ## TODO: Change <Path in Builder Stage>
-COPY --from=builder /rare/rare /rare
+COPY --from=builder /rare/rare /
 RUN ls /
