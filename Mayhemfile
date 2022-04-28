@@ -1,7 +1,8 @@
 project: rare
 target: rare
-duration: 90
-advanced_triage: false
+
+# Base image to run the binary in.
+image: ghcr.io/prateekvishnu/rare:latest
 
 cmds:
   - cmd: /rare histo
